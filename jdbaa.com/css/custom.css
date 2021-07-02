@@ -7,6 +7,7 @@
 .page{height:100vh;background-color: #000;}
 .page-2:before{content:'';position:absolute;top:-60px;left:0;width:50%;height:120px;background-color:#037881;border-radius:50%;}
 .page-2:after{content:'';position:absolute;top:-60px;right:0;width:50%;height:120px;background-color:#000;border-radius:50%;}
+.home_btn{font-size:2rem !important;border:0;box-shadow:2px 2px 5px #fff inset,-2px -2px 5px #000 inset;}
 .process-box{border:5px solid #866952;border-radius:10px;}
 .process-box:before{content:'';position:absolute;top:-50px;left:calc(50% - 50px);width:100px;height:100px;background:linear-gradient(90deg,#f4c095 0%,#866952 15%,#ebd4c2 50%,#ebd4c2 80%,#866952 100%);;border-radius:50%;font-size:4rem;font-weight: bold;text-align:center;line-height:100px;}
 .process-box:after{content:attr(data-num);position:absolute;top:-40px;left:calc(50% - 40px);width:80px;height:80px;background-color:#fff;border-radius:50%;box-shadow:3px 3px 10px #000 inset;color:#ff2a76;font-size:4rem;font-weight: bold;text-align:center;line-height:80px;}
