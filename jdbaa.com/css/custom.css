@@ -16,7 +16,8 @@
 .game-icon:before{content:'';position:absolute;top:12px;bottom:12px;left:12px;right:12px;background-color:#ff2a76; border-radius:100%;box-shadow:0 0 10px #000,2px 2px 10px #fff inset;}
 .game-icon:hover:before{box-shadow:0 0 10px #000 inset;}
 
-footer{height:60px;z-index:1;}
+footer{z-index:1;}
+footer img{height:40px;}
 
 @keyframes arrow {
     0%{transform: translateY(-10px);}
@@ -54,6 +55,11 @@ footer{height:60px;z-index:1;}
 .main-bg-linear-1 {background:linear-gradient(0deg,#f4c095 0%,#866952 15%,#ebd4c2 50%,#ebd4c2 80%,#866952 100%);}
 
 @media screen and (max-width:500px) {
+    .h1{font-size:1.75rem;}
+    .h3{font-size:1.25rem;}
+    .h5{font-size:1rem;}
+    .page{height:auto;padding:60px 0 10px;}
     .process-box,.card{margin-bottom: 1rem;}
     .banner .list img{padding:1rem 2rem;}
+    footer img{display:block;}
 }
