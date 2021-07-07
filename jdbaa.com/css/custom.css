@@ -17,7 +17,7 @@
 .game-icon:hover:before{box-shadow:0 0 10px #000 inset;}
 
 footer{z-index:1;}
-footer img{height:40px;}
+footer img{height:40px;margin: 0 2rem 0 0;}
 
 @keyframes arrow {
     0%{transform: translateY(-10px);}
@@ -61,5 +61,5 @@ footer img{height:40px;}
     .page{height:auto;padding:60px 0 10px;}
     .process-box,.card{margin-bottom: 1rem;}
     .banner .list img{padding:1rem 2rem;}
-    footer img{display:block;margin-right:0 !important;margin:auto !important;}
+    footer img{display:block;margin:auto !important;}
 }
