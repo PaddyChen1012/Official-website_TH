@@ -61,5 +61,5 @@ footer img{height:40px;}
     .page{height:auto;padding:60px 0 10px;}
     .process-box,.card{margin-bottom: 1rem;}
     .banner .list img{padding:1rem 2rem;}
-    footer img{display:block;}
+    footer img{display:block;margin:auto !important;;}
 }
