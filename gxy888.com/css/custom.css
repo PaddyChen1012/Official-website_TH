@@ -1,7 +1,7 @@
 *{position:relative;box-sizing:border-box;}
 body{background:url(../images/GXY88BG_1920x1080.jpg)no-repeat center/cover fixed;}
-.title{height:60px;z-index:2;}
-.logo{height:120px;-webkit-filter:drop-shadow(5px 5px 5px #333);}
+.title{z-index:2;}
+.logo{height: 60px;}
 .arrow{width:30px;height:30px;background:url(../images/arrow.png)no-repeat center/contain;animation:arrow ease infinite 1.2s ;z-index:1;}
 .move{animation:move-animation ease infinite 12s ;}
 .flashing{-webkit-filter:saturate(0.2);animation: flashing ease infinite 4s ;}
