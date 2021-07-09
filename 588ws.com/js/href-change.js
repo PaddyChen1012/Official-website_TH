@@ -8,7 +8,7 @@ window.onload=function(){
     if (window.innerWidth>500){
         var li_width=document.querySelector('.banner').clientWidth / 5; //每張圖的寬度
     }else{
-        var li_width=document.querySelector('.banner').clientWidth / 3; //每張圖的寬度
+        var li_width=document.querySelector('.banner').clientWidth / 2; //每張圖的寬度
     }
     
     list.innerHTML=list.innerHTML+list.innerHTML; //在列表最後添加一份，在展示最後一張切到第一張時實際展示的是剛添加的這張

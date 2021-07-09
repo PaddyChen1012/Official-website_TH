@@ -1,24 +1,53 @@
 *{position:relative;box-sizing:border-box;}
-.title{height:60px;z-index:2;}
-.logo{height:120px;-webkit-filter:drop-shadow(5px 5px 5px #333);}
+body{background:url(../images/GXY88BG_1920x1080.jpg)no-repeat center/cover fixed;}
+.title{z-index:2;}
+.logo{height: 60px;}
 .arrow{width:30px;height:30px;background:url(../images/arrow.png)no-repeat center/contain;animation:arrow ease infinite 1.2s ;z-index:1;}
+.move{animation:move-animation ease infinite 12s ;}
+.flashing{-webkit-filter:saturate(0.2);animation: flashing ease infinite 4s ;}
+.flashing-1{-webkit-filter:saturate(0.2);animation: flashing ease infinite 4s 1.2s;}
+.flashing-2{-webkit-filter:saturate(0.2);animation: flashing ease infinite 4s 2.2s;}
+.flashing-3{-webkit-filter:saturate(0.2);animation: flashing ease infinite 4s 3.2s;}
 .bottom-20{bottom:20px;}
 .bottom-0{bottom:0;}
-.page{height:100vh;background-color: #000;}
-.page-2:before{content:'';position:absolute;top:-60px;left:0;width:50%;height:120px;background-color:#037881;border-radius:50%;}
-.page-2:after{content:'';position:absolute;top:-60px;right:0;width:50%;height:120px;background-color:#000;border-radius:50%;}
+.page{height:100vh;background-color:transparent;}
+/* .page-2:before{content:'';position:absolute;top:-60px;left:0;width:50%;height:120px;background-color:#037881;border-radius:50%;}
+.page-2:after{content:'';position:absolute;top:-60px;right:0;width:50%;height:120px;background-color:#000;border-radius:50%;} */
 .home_btn{font-size:2rem !important;border:0;box-shadow:2px 2px 5px #fff inset,-2px -2px 5px #000 inset;}
-.process-box{border:5px solid #866952;border-radius:10px;}
-.process-box:before{content:'';position:absolute;top:-50px;left:calc(50% - 50px);width:100px;height:100px;background:linear-gradient(90deg,#f4c095 0%,#866952 15%,#ebd4c2 50%,#ebd4c2 80%,#866952 100%);;border-radius:50%;font-size:4rem;font-weight: bold;text-align:center;line-height:100px;}
-.process-box:after{content:attr(data-num);position:absolute;top:-40px;left:calc(50% - 40px);width:80px;height:80px;background-color:#fff;border-radius:50%;box-shadow:3px 3px 10px #000 inset;color:#ff2a76;font-size:4rem;font-weight: bold;text-align:center;line-height:80px;}
-.game-icon:before{content:'';position:absolute;top:12px;bottom:12px;left:12px;right:12px;background-color:#ff2a76; border-radius:100%;box-shadow:0 0 10px #000,2px 2px 10px #fff inset;}
+.process-box{border:5px solid #f1b225;border-radius:10px;}
+.process-box:before{content:'';position:absolute;top:-50px;left:calc(50% - 50px);width:100px;height:100px;background:linear-gradient(90deg,#f6c33c 0%,#ffe376  15%,#a75702 50%,#f1b225 100%);;border-radius:50%;font-size:4rem;font-weight: bold;text-align:center;line-height:100px;}
+.process-box:after{content:attr(data-num);position:absolute;top:-40px;left:calc(50% - 40px);width:80px;height:80px;background-color:#fff;border-radius:50%;box-shadow:3px 3px 10px #000 inset;color:#000;font-size:4rem;font-weight: bold;text-align:center;line-height:80px;}
+.game-icon:before{content:'';position:absolute;top:12px;bottom:12px;left:12px;right:12px;background-color:#f6c33c; border-radius:100%;box-shadow:0 0 10px #000,2px 2px 10px #fff inset;}
 .game-icon:hover:before{box-shadow:0 0 10px #000 inset;}
+.card-1{background:url(../images/slot-bg.jpeg)no-repeat right/cover;min-height: 440px;}
+.card-1>img{position:absolute;width:120%;bottom:0;left:-20%;}
+.card-2{background:url(../images/fishing-bg.png)no-repeat right/cover;}
+.card-2>img{position:absolute;width:100%;bottom:0;left:0;}
+.card-3{background:url(../images/baccarat-bg.jpg)no-repeat center/cover;}
+.card-4{background:url(../images/roulette-bg.jfif)no-repeat center/cover;}
 
-footer{height:60px;z-index:1;}
+.word-box{position: absolute;bottom: 0;height: 60px;}
+.word-box-1{position: absolute;bottom: 0;height: 40px;}
+
+footer{z-index:1;}
+footer img{height:40px;margin: 0 2rem 0 0;}
 
 @keyframes arrow {
-    0%{transform: translateY(-10px);}
-    100%{transform: translateY(10px);}
+    0%{transform: translateY(-10px) scale(.8);transform-origin: center;}
+    50%{transform: translateY(10px);transform-origin: center;}
+    100%{transform: translateY(-10px) scale(.8);transform-origin: center;}
+}
+@keyframes move-animation {
+    0%{transform: translate(0,-10px);}
+    33%{transform: translate(-10px,10px);}
+    66%{transform: translate(10px,10px);}
+    100%{transform: translate(0,-10px);}
+}
+@keyframes flashing {
+    0%,20%{-webkit-filter:saturate(1);}
+    25%{-webkit-filter:saturate(0.2);}
+    75%{-webkit-filter:saturate(0.2);}
+    100%{-webkit-filter:saturate(0.2);}
 }
 
 /* 輪播 */
@@ -31,21 +60,31 @@ footer{height:60px;z-index:1;}
 .icos li.on{background:#ff2a76;}
 
 /* word */
-.main-color-1 {color:#ff2a76;}
-.main-color-2 {color:#36beb8;}
-.main-color-3 {color:#037881;}
-.main-color-4 {color:#f4c095;}
+.main-color-1 {color:#56ccf2;}
+.main-color-2 {color:rgba(255,255,255,.5);}
+.main-color-3 {color:#ffffffa9;}
+.main-color-4 {color:#f96363;}
 .main-color-5 {color:#ffffff;}
-.main-color-6 {color:#153236;}
-.main-bg-1 {background-color:#ff2a76;}
-.main-bg-2 {background-color:#36beb8;}
-.main-bg-3 {background-color:#037881;}
-.main-bg-4 {background-color:#f4c095;}
+.main-color-6 {color:#00000000;}
+.main-bg-1 {background-color:#56ccf2;}
+.main-bg-2 {background-color:rgba(0,0,0,.2);}
+.main-bg-3 {background:linear-gradient(0deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,.2) 20%, rgba(255,255,255,.2) 80%, rgba(255,255,255,.5) 100%);}
+.main-bg-4 {background-color:#f96363;}
 .main-bg-5 {background-color:#ffffff;}
-.main-bg-6 {background-color:#153236;}
-.main-bg-linear-1 {background:linear-gradient(0deg,#f4c095 0%,#866952 15%,#ebd4c2 50%,#ebd4c2 80%,#866952 100%);}
+.main-bg-6 {background: #00000099;}
+.main-bg-linear-1 {background:linear-gradient(0deg,#f6c33c 0%,#ffe376  15%,#a75702 50%,#f1b225 100%);}
+.text-shadow-1{text-shadow: 2px 2px 0px #000;}
 
 @media screen and (max-width:500px) {
+    .h1{font-size:1.75rem;}
+    .h3{font-size:1.25rem;}
+    .h5{font-size:1rem;}
+    .page{height:auto;padding:60px 0 10px;}
+    .card-1{min-height: 300px;margin-bottom:1rem;}
+    .card-2{min-height: 150px;margin-bottom:1rem;}
+    .card-3{min-height: 150px;margin-bottom:1rem;}
+    .card-4{min-height: 150px;margin-bottom:1rem;}
     .process-box,.card{margin-bottom: 1rem;}
     .banner .list img{padding:1rem 2rem;}
+    footer img{display:block;margin:auto !important;}
 }
