@@ -19,12 +19,12 @@ body{background:url(../images/588WSBG_1920x1080.jpg)no-repeat center/cover fixed
 .process-box:after{content:attr(data-num);position:absolute;top:-40px;left:calc(50% - 40px);width:80px;height:80px;background-color:#fff;border-radius:50%;box-shadow:3px 3px 10px #000 inset;color:#000;font-size:4rem;font-weight: bold;text-align:center;line-height:80px;}
 .game-icon:before{content:'';position:absolute;top:12px;bottom:12px;left:12px;right:12px;background-color:#f6c33c; border-radius:100%;box-shadow:0 0 10px #000,2px 2px 10px #fff inset;}
 .game-icon:hover:before{box-shadow:0 0 10px #000 inset;}
-.card-1{background:url(../images/slot-bg.jpeg)no-repeat right/cover;min-height: 440px;}
-.card-1>img{position:absolute;width:120%;bottom:0;left:-20%;}
-.card-2{background:url(../images/fishing-bg.png)no-repeat right/cover;}
-.card-2>img{position:absolute;width:100%;bottom:0;left:0;}
+.card-1{background:url(../images/slot-bg.jpeg)no-repeat center/cover;min-height: 440px;}
+.card-1>img{position:absolute;width:85%;bottom:0;left:-20%;}
+.card-2{background:url(../images/fishing-bg.jpeg)no-repeat right/cover;}
+.card-2>img{position:absolute;width:80%;bottom:0;left:10%;}
 .card-3{background:url(../images/baccarat-bg.jpg)no-repeat center/cover;}
-.card-4{background:url(../images/roulette-bg.jfif)no-repeat center/cover;}
+.card-4{background:url(../images/roulette-bg.jfif)no-repeat left/cover;}
 
 .word-box{position: absolute;bottom: 0;height: 60px;}
 .word-box-1{position: absolute;bottom: 0;height: 40px;}
@@ -60,10 +60,10 @@ footer img{height:40px;margin: 0 2rem 0 0;}
 .icos li.on{background:#ff2a76;}
 
 /* word */
-.main-color-1 {color:#56ccf2;}
+.main-color-1 {color:#d02c55;}
 .main-color-2 {color:rgba(255,255,255,.5);}
 .main-color-3 {color:#ffffffa9;}
-.main-color-4 {color:#f96363;}
+.main-color-4 {color:rgba(50,151,255,.7);}
 .main-color-5 {color:#ffffff;}
 .main-color-6 {color:#00000000;}
 .main-bg-1 {background-color:#56ccf2;}
